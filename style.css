@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.d-none {display: none}
+.container {
+    min-height: 100vh; 
+    max-height: 100vh; 
+    min-width: 100vw; 
+    max-width: 100vw; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(70, 119, 205);
+    overflow: hidden;
+    z-index: auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgb(196, 218, 252);
+}
+
+#countdown {
+    font-size: 8rem;
+    position: relative; 
+    color: rgb(196, 218, 252);
+}
+
+#late {
+    color: rgb(0, 0, 0); 
+    font-size: 8rem;
+}
+
+#countdown::before, #countdown::after {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    height: 40px; 
+    background: rgb(61, 84, 123);
+    transform: translate(-50%, -50%) skew(10deg);
+    top: 50%; 
+}
+#countdown::before {
+    left: -55%;
+}
+#countdown::after {
+    left: 155%;
+}
